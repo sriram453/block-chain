@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chedella Sai Sriram Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->
+    <header id="Home">
+        <nav>
+            <h1 class="sub"><b>WELCOME TO MY PORTFOLIO</b></h1><br>
+
+            <button class="hey" onclick="showPage('About')">About</button>
+            <button class="hey" onclick="showPage('Skills')">Skills</button>
+            <button class="hey" onclick="showPage('Projects')">Projects</button>
+            <button class="hey" onclick="showPage('Contact')">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="About">
+            <h1>About</h1>
+            <h2>Sathwik Reddy Dudipala</h2>
+            <img src="" alt=" ch sai sriram  Photo">
+            <p>My name is <strong>Sai Sriram Chedella</strong>. I am currently pursuing B.Tech 3rd year in SR University WGL.</p>
+            <p>I have passion in my field to learn. I have problem solving skills. I easily adapt to new environments.</p>
+
+            <button onclick="goHome()">Back</button>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="Skills">
+            <h1>My Skills</h1>
+            <ol>
+                <li>MS Word</li>
+                <li>MS Excel</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <button onclick="goHome()">Back</button>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="Projects">
+            <h1>Projects</h1>
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Project Name</th>
+                    <th>Platform</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hospital Management System</td>
+                    <td>HTML & CSS</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>My Portfolio</td>
+                    <td>HTML & CSS</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ecommerce</td>
+                    <td>Java</td>
+                </tr>
+            </table>
+
+            <button onclick="goHome()">Back</button>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="Contact">
+            <h1>Contact Me</h1>
+
+            <form>
+                <label><b>Name:</b></label>
+                <input type="text" placeholder="Enter your name"><br><br>
+
+                <label><b>Email:</b></label>
+                <input type="email" placeholder="Enter your email"><br><br>
+
+                <b>Gender:</b>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <br><br>
+
+                <b>Languages:</b>
+                <input type="checkbox"> C
+                <input type="checkbox"> Java
+                <br><br>
+
+                <label>Bio (max 200 words):</label><br>
+                <textarea rows="4" cols="40"></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <button onclick="goHome()">Back</button>
+        </section>
+
+    </main>
+
+    <footer>
+        Thank you
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function showPage(pageId) {
+
+            // Hide Home
+            document.getElementById("Home").style.display = "none";
+
+            // Hide all sections
+            const sections = document.querySelectorAll("section");
+            sections.forEach(function(section) {
+                section.style.display = "none";
+            });
+
+            // Show selected section
+            document.getElementById(pageId).style.display = "block";
+        }
+
+        function goHome() {
+
+            // Hide all sections
+            const sections = document.querySelectorAll("section");
+            sections.forEach(function(section) {
+                section.style.display = "none";
+            });
+
+            // Show Home again
+            document.getElementById("Home").style.display = "block";
+        }
+
+    </script>
+
+</body>
+</html>

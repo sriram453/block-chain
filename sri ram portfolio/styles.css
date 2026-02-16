@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #333;
+}
+
+/* HOME SECTION */
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Navigation Buttons */
+.hey {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: #2a5298;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hey:hover {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    display: none;
+    min-height: 100vh;
+    padding: 60px 20px;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+/* Section Headings */
+section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2a5298;
+}
+
+/* About Image */
+img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid #2a5298;
+}
+
+/* Skills List */
+ol {
+    list-style-position: inside;
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* Table Styling */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #2a5298;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Form Styling */
+form {
+    background-color: white;
+    padding: 30px;
+    width: 400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Back Button */
+section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2a5298;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section button:hover {
+    background-color: #ff9800;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: lightgray;
+    text-align: center;
+    padding: 20px;
+}
